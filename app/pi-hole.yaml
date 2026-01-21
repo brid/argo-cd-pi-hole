@@ -115,9 +115,7 @@ spec:
     targetPort: 67
   selector:
     app: pihole
-  # externalTrafficPolicy: Local
-  # loadBalancerIP: 10.1.1.20
-  type: NodePort
+  type: LoadBalancer
 ---
 apiVersion: v1
 kind: Service
