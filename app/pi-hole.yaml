@@ -115,6 +115,7 @@ spec:
     targetPort: 67
   selector:
     app: pihole
+  externalTrafficPolicy: Local
   type: LoadBalancer
 ---
 apiVersion: v1
@@ -140,4 +141,5 @@ spec:
     targetPort: 53
   selector:
     app: pihole
+  externalTrafficPolicy: Local
   type: LoadBalancer
